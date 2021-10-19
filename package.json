@@ -8,7 +8,7 @@
 		"client": "cd client_ui && yarn start",
 		"dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
 		"start": "node server.js",
-		"heroku-postbuild": "NPM_CONFIG_PRODUCTION= false npm instal npm && run build --prefix client"
+		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
 	},
 	"keywords": [],
 	"author": "Minal Narsale",
